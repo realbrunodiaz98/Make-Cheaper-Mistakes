@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="7" fill="#0B0C0E" />
+  <rect x="1" y="1" width="30" height="30" rx="6" fill="none" stroke="#C29B7F" stroke-width="1.2" stroke-opacity="0.5" />
+  <!-- Modern streamlined car silhouette -->
+  <path d="M7 19.5 L9.3 13.5 C9.7 12.3 10.8 11.5 12.1 11.5 H19.9 C21.2 11.5 22.3 12.3 22.7 13.5 L25 19.5" fill="none" stroke="#C29B7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M6 19.5 H26 C26.6 19.5 27 20 27 20.6 V22.5 C27 23.1 26.6 23.5 26 23.5 H24 C23.4 23.5 23 23.1 23 22.5 V21 H9 V22.5 C9 23.1 8.6 23.5 8 23.5 H6 C5.4 23.5 5 23.1 5 22.5 V20.6 C5 20 5.4 19.5 6 19.5 Z" fill="#C29B7F" fill-opacity="0.2" stroke="#C29B7F" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Headlights -->
+  <circle cx="8.5" cy="17.5" r="1.2" fill="#E5C3A6" />
+  <circle cx="23.5" cy="17.5" r="1.2" fill="#E5C3A6" />
+</svg>

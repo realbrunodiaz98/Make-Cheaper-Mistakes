@@ -35,6 +35,17 @@ export const ImageModal: React.FC<ImageModalProps> = ({ car, onClose }) => {
             src={car.imageSrc}
             alt={car.altText}
             className="w-full h-full object-cover object-center"
+            onError={(e) => {
+              const img = e.currentTarget;
+              if (!img.dataset.fallbackTried) {
+                img.dataset.fallbackTried = '1';
+                if (img.src.endsWith('.jpg')) {
+                  img.src = img.src.replace(/\.jpg$/, '.JPG');
+                } else if (img.src.endsWith('.JPG')) {
+                  img.src = img.src.replace(/\.JPG$/, '.jpg');
+                }
+              }
+            }}
           />
           <div className="absolute top-3 left-3">
             <span className="font-mono-numbers text-xs font-semibold px-2.5 py-1 bg-black/80 backdrop-blur-md text-[#C29B7F] rounded border border-[#242733]">
