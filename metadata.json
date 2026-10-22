@@ -1,0 +1,6 @@
+{
+  "name": "Before You Sign — Don't Make My $69K Car Mistake",
+  "description": "A 20-minute car financing & leasing decision guide and real-cost calculator by Bruno Diaz. Uncover the full cost before taking on years of financial regret.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

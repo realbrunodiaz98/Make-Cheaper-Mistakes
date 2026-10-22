@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Before You Sign — Don't Make My $69,000 Car Mistake</title>
+  <meta name="description" content="A 20-minute guide and 5-minute decision tool to uncover the real cost of financing or leasing before committing to years of financial regret.">
+
+  <!-- Inter & Plus Jakarta Sans Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-base: #0B0C0E;
+      --bg-card: #15161A;
+      --bg-card-hover: #1C1D23;
+      --bg-surface: #20222A;
+      --border: #262832;
+      --border-focus: #C29B7F;
+      --accent: #C29B7F;
+      --accent-hover: #D4AF93;
+      --accent-muted: rgba(194, 155, 127, 0.12);
+      --text-main: #F5F5F7;
+      --text-muted: #8E909B;
+      --text-dim: #5C5E68;
+      
+      --red: #E05252;
+      --red-bg: rgba(224, 82, 82, 0.12);
+      --yellow: #E5A93C;
+      --yellow-bg: rgba(229, 169, 60, 0.12);
+      --green: #48BB78;
+      --green-bg: rgba(72, 187, 120, 0.12);
+
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --container: 1040px;
+      --radius: 10px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* TYPOGRAPHY */
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+      letter-spacing: -0.025em;
+      font-weight: 700;
+      line-height: 1.18;
+      color: var(--text-main);
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .container-narrow {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* TOP ANNOUNCEMENT BAR */
+    .promo-bar {
+      background: #121316;
+      border-bottom: 1px solid var(--border);
+      padding: 10px 16px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      letter-spacing: 0.01em;
+    }
+    .promo-bar strong {
+      color: #fff;
+      font-weight: 700;
+      margin-right: 4px;
+    }
+
+    /* BADGES & PILLS */
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .pill.accent {
+      background: var(--accent-muted);
+      border-color: rgba(194, 155, 127, 0.3);
+      color: var(--accent);
+    }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 30px;
+      border-radius: var(--radius);
+      font-family: var(--font-heading);
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      text-align: center;
+      border: none;
+      min-height: 52px;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #121316;
+      box-shadow: 0 4px 20px rgba(194, 155, 127, 0.25);
+    }
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 24px rgba(194, 155, 127, 0.35);
+    }
+    .btn-block {
+      width: 100%;
+    }
+    .cta-subtext {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .cta-subtext span {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      padding: 64px 0 54px;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 48px;
+      align-items: center;
+    }
+    .hero-content h1 {
+      font-size: 44px;
+      margin-bottom: 18px;
+      letter-spacing: -0.03em;
+    }
+    .hero-content h1 span.highlight {
+      color: var(--accent);
+      display: block;
+    }
+    .hero-subtitle {
+      font-size: 18px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+    .hook-quote {
+      background: var(--bg-card);
+      border-left: 3px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin-bottom: 30px;
+      font-size: 15px;
+      color: #DFDFE3;
+    }
+    .hook-quote strong {
+      color: #FFFFFF;
+    }
+
+    /* HERO MOCKUP CARD */
+    .hero-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+      position: relative;
+    }
+    .hero-card-img {
+      width: 100%;
+      height: 220px;
+      background: #0D0E11 url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80') center/cover;
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .hero-card-img::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(13,14,17,0.1) 0%, rgba(13,14,17,0.85) 100%);
+    }
+    .hero-card-overlay {
+      position: absolute;
+      bottom: 12px;
+      left: 14px;
+      right: 14px;
+      z-index: 2;
+    }
+    .hero-card-overlay .tag {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      background: rgba(0,0,0,0.7);
+      padding: 3px 8px;
+      border-radius: 4px;
+      color: var(--accent);
+      text-transform: uppercase;
+    }
+    .hero-pricing-box {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .hero-price-strike {
+      font-size: 15px;
+      color: var(--text-dim);
+      text-decoration: line-through;
+      margin-right: 8px;
+    }
+    .hero-price {
+      font-size: 34px;
+      font-weight: 800;
+      color: #fff;
+      font-family: var(--font-heading);
+    }
+
+    /* REAL EVIDENCE PHOTO SECTION */
+    .timeline-strip {
+      padding: 60px 0;
+      background: #0E0F12;
+      border-bottom: 1px solid var(--border);
+    }
+    .timeline-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .timeline-header h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .timeline-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .car-proof-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .car-proof-img {
+      width: 100%;
+      height: 180px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+    }
+    .car-proof-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(11, 12, 14, 0.85);
+      backdrop-filter: blur(4px);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-family: var(--font-mono);
+      color: var(--accent);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .car-proof-body {
+      padding: 16px;
+      flex: 1;
+    }
+    .car-proof-body h4 {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+    .car-proof-body p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+    .car-cost-badge {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--red);
+      margin-top: 10px;
+      display: inline-block;
+      font-weight: 600;
+    }
+
+    /* PAIN & PROBLEM SECTION */
+    .section-pad {
+      padding: 80px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+    .section-desc {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 16px;
+      max-width: 620px;
+      margin: 0 auto 50px;
+    }
+
+    .pain-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .pain-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+    .pain-card.alert {
+      border-color: rgba(224, 82, 82, 0.3);
+      background: linear-gradient(180deg, rgba(224, 82, 82, 0.05) 0%, var(--bg-card) 100%);
+    }
+    .pain-card h3 {
+      font-size: 20px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .pain-card p {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .quote-box-centered {
+      max-width: 700px;
+      margin: 40px auto 0;
+      background: #111216;
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      text-align: center;
+    }
+    .quote-box-centered .big-line {
+      font-family: var(--font-heading);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+    .quote-box-centered p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* THE STATS / VALUE SECTION */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 30px;
+    }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 18px;
+      text-align: center;
+    }
+    .stat-number {
+      font-family: var(--font-heading);
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .stat-label {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* PRODUCT BREAKDOWN SECTION */
+    .curriculum-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .curriculum-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      position: relative;
+    }
+    .curriculum-card .card-num {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--accent);
+      margin-bottom: 10px;
+      display: block;
+    }
+    .curriculum-card h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .curriculum-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* 7-STEP FRAMEWORK HORIZONTAL BAR */
+    .framework-flow {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px;
+      margin-top: 30px;
+    }
+    .framework-flow h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .step-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .step-pill {
+      background: #111216;
+      border: 1px solid var(--border);
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .step-pill .step-idx {
+      font-family: var(--font-mono);
+      color: var(--accent);
+      font-size: 11px;
+    }
+
+    /* INTERACTIVE MINI CALCULATOR SECTION */
+    .calc-section {
+      background: #0E0F13;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px;
+      margin: 40px auto 0;
+      max-width: 820px;
+    }
+    .calc-header {
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .calc-header h3 {
+      font-size: 24px;
+      margin-bottom: 6px;
+    }
+    .calc-header p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .calc-inputs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 24px;
+    }
+    .input-group label {
+      display: block;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .input-wrapper span.prefix {
+      position: absolute;
+      left: 14px;
+      color: var(--text-dim);
+      font-family: var(--font-mono);
+    }
+    .input-wrapper input {
+      width: 100%;
+      background: #15161C;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px 14px 12px 28px;
+      color: #fff;
+      font-size: 15px;
+      font-family: var(--font-mono);
+      outline: none;
+      transition: border 0.2s;
+    }
+    .input-wrapper input:focus {
+      border-color: var(--accent);
+    }
+    .calc-results {
+      background: #15161C;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      text-align: center;
+    }
+    .calc-result-box .res-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 4px;
+    }
+    .calc-result-box .res-val {
+      font-family: var(--font-heading);
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--accent);
+    }
+    .calc-callout {
+      text-align: center;
+      margin-top: 18px;
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+
+    /* VALUE STACK TABLE */
+    .stack-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .stack-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 15px;
+    }
+    .stack-item:last-child {
+      border-bottom: none;
+    }
+    .stack-item .val {
+      font-family: var(--font-mono);
+      color: var(--text-dim);
+      text-decoration: line-through;
+    }
+    .stack-total {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 2px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .stack-total .bold-label {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .stack-total .deal-price {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--accent);
+      font-family: var(--font-heading);
+    }
+
+    /* FOUNDER / RAW CONFESSION SECTION */
+    .story-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 40px;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .story-card h3 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .story-card p {
+      font-size: 15px;
+      color: #D3D4DC;
+      margin-bottom: 16px;
+    }
+    .story-card .signature-block {
+      margin-top: 26px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* GUARANTEE BOX */
+    .guarantee-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      background: linear-gradient(180deg, #181920 0%, #131418 100%);
+      border: 1px solid rgba(194, 155, 127, 0.3);
+      border-radius: var(--radius);
+      padding: 34px;
+      text-align: center;
+    }
+    .guarantee-badge {
+      font-size: 36px;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+    .guarantee-wrap h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+      color: #FFFFFF;
+    }
+    .guarantee-wrap p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      max-width: 580px;
+      margin: 0 auto;
+    }
+
+    /* FAQ ACCORDION */
+    .faq-container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-question {
+      padding: 18px 22px;
+      font-weight: 600;
+      font-size: 15.5px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .faq-question:hover {
+      background: var(--bg-card-hover);
+    }
+    .faq-icon {
+      font-size: 18px;
+      color: var(--accent);
+      transition: transform 0.2s;
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background: #111216;
+    }
+    .faq-answer-inner {
+      padding: 18px 22px;
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      border-top: 1px solid var(--border);
+    }
+
+    /* STICKY BOTTOM BAR FOR MOBILE */
+    .mobile-sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(14, 15, 18, 0.95);
+      backdrop-filter: blur(8px);
+      border-top: 1px solid var(--border);
+      padding: 12px 18px;
+      z-index: 999;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .mobile-sticky-cta .price-tag {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .mobile-sticky-cta .price-tag strong {
+      font-size: 18px;
+      color: #fff;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 40px 0;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-dim);
+      border-top: 1px solid var(--border);
+    }
+
+    /* RESPONSIVE BREAKPOINTS */
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .curriculum-grid {
+        grid-template-columns: 1fr;
+      }
+      .stats-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .pain-cards {
+        grid-template-columns: 1fr;
+      }
+      .hero-content h1 {
+        font-size: 34px;
+      }
+      .calc-inputs {
+        grid-template-columns: 1fr;
+      }
+      .mobile-sticky-cta {
+        display: flex;
+      }
+      body {
+        padding-bottom: 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. TOP PROMO BAR -->
+  <div class="promo-bar">
+    ⚡ <strong>DON'T SIGN ON AUTOPILOT:</strong> Get the 20-minute guide & decision tool for just $27 (Instant Digital Access)
+  </div>
+
+  <!-- 2. HERO SECTION -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="pill accent">Decision Circuit Breaker</div>
+          <h1>
+            The Monthly Payment Is <span class="highlight">Only The Beginning.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Before you finance or lease a car, uncover the hidden carry costs beyond the dealer's monthly teaser, test your future assumptions, and stop an expensive mistake before it starts.
+          </p>
+
+          <div class="hook-quote">
+            "I spent roughly <strong>$69,000 on cars over 4½ years</strong>. And I don't have a single car to show for it. This is the 20-minute guide and 5-minute tool I wish I had before the first domino fell."
+          </div>
+
+          <a href="https://whop.com/make-cheaper-mistakes-than-i-did/don-t-make-my-69-000-mistake/" class="btn btn-primary btn-block">
+            Get Instant Access — $27
+          </a>
+          
+          <div class="cta-subtext">
+            <span>🛡️ 30-Day Money-Back Guarantee</span>
+            <span>⚡ Instant Notion & Web Access</span>
+            <span>🚫 0% Fluff, 100% Real Numbers</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-img">
+            <div class="hero-card-overlay">
+              <span class="tag">Unfiltered Case Study & Tool</span>
+            </div>
+          </div>
+          <div style="margin-top: 16px;">
+            <h3 style="font-size: 19px; margin-bottom: 6px;">Before You Sign: Decision Guide</h3>
+            <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.4;">
+              Includes the complete PDF breakdown, 6 foundational lessons, the 7-Step "DON'T DECIDE YET" framework, duplicate-ready Notion workspace, and mobile calculator.
+            </p>
+          </div>
+          <div class="hero-pricing-box">
+            <div>
+              <span class="hero-price-strike">$47</span>
+              <span class="hero-price">$27</span>
+            </div>
+            <span style="font-size: 12px; color: var(--accent); font-weight: 600;">LIFETIME ACCESS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. REALITY CHECK: THE $69K PHOTO TIMELINE -->
+  <section class="timeline-strip">
+    <div class="container">
+      <div class="timeline-header">
+        <div class="pill">Documented Evidence</div>
+        <h2>5 Cars. 4½ Years. Zero Remaining.</h2>
+        <p style="font-size: 15px; color: var(--text-muted); max-width: 600px; margin: 0 auto;">
+          This isn't theory written by an armchair finance blogger. This guide was born from an actual compounding cascade of car commitments in Los Angeles.
+        </p>
+      </div>
+
+      <div class="timeline-grid">
+        <!-- 1: BMW -->
+        <div class="car-proof-card">
+          <div class="car-proof-img" style="background-image: url('PXL_20220306_221016474.jpg');">
+            <span class="car-proof-tag">01 • Early 2022</span>
+          </div>
+          <div class="car-proof-body">
+            <h4>The "Free" BMW 530i</h4>
+            <p>Given by an uncle. Needed thousands in repairs. Instead of selling it for cheap cash, I traded it in for $1,500 toward a new Kia.</p>
+            <span class="car-cost-badge">Traded for $1,500 credit</span>
+          </div>
+        </div>
+
+        <!-- 2: Niro 1 -->
+        <div class="car-proof-card">
+          <div class="car-proof-img" style="background-image: url('PXL_20220803_232338600.jpg');">
+            <span class="car-proof-tag">02 • The First Kia Niro</span>
+          </div>
+          <div class="car-proof-body">
+            <h4>$467 / Month Payment</h4>
+            <p>Felt completely affordable on a $4,000/mo income. Six months later, it was involved in a collision and totaled.</p>
+            <span class="car-cost-badge">Monthly: $467/mo (Totaled)</span>
+          </div>
+        </div>
+
+        <!-- 3: Totaled Crash -->
+        <div class="car-proof-card">
+          <div class="car-proof-img" style="background-image: url('PXL_20230206_023758362.jpg');">
+            <span class="car-proof-tag">03 • The Panic Trigger</span>
+          </div>
+          <div class="car-proof-body">
+            <h4>The Escape Decision Trap</h4>
+            <p>Stuck without transport. Under panic, rushed to buy another new Niro two weeks later. The payment spiked to $732/mo.</p>
+            <span class="car-cost-badge">Payment jump: +$265/mo</span>
+          </div>
+        </div>
+
+        <!-- 4: Niro 2 -->
+        <div class="car-proof-card">
+          <div class="car-proof-img" style="background-image: url('PXL_20230303_035311029.jpg');">
+            <span class="car-proof-tag">04 • The Second Niro</span>
+          </div>
+          <div class="car-proof-body">
+            <h4>$732 / Month + Defect</h4>
+            <p>Severe transmission issues started lasting months. Felt helpless and furious. Abandoned it at the dealer thinking debt would go away.</p>
+            <span class="car-cost-badge">Monthly: $732/mo</span>
+          </div>
+        </div>
+
+        <!-- 5: Tesla -->
+        <div class="car-proof-card">
+          <div class="car-proof-img" style="background-image: url('PXL_20231017_015243166.jpg');">
+            <span class="car-proof-tag">05 • The Tesla Model 3</span>
+          </div>
+          <div class="car-proof-body">
+            <h4>$600 / Mo Lease + $2,500 Down</h4>
+            <p>Leased 5 days after stopping Kia payments to escape the frustration. Charging, insurance surges, and old debt still remained.</p>
+            <span class="car-cost-badge">Carrying 2 cars simultaneously</span>
+          </div>
+        </div>
+
+        <!-- 6: Forte -->
+        <div class="car-proof-card">
+          <div class="car-proof-img" style="background-image: url('IMG_5677.jpeg');">
+            <span class="car-proof-tag">06 • The Kia Forte</span>
+          </div>
+          <div class="car-proof-body">
+            <h4>Rolled Negative Equity</h4>
+            <p>Traded the bad Niro into a Forte to escape dealer penalties. Created another $650/mo loan. Eventually surrendered the note, hurting credit.</p>
+            <span class="car-cost-badge">Grand Total: $69,000 Spent</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PAIN & PROBLEM -->
+  <section class="section-pad">
+    <div class="container-narrow">
+      <div class="pill" style="display:table; margin: 0 auto 16px;">The Psychological Trap</div>
+      <h2 class="section-title">Dealers Sell The Payment.<br>You Pay The Whole Iceberg.</h2>
+      <p class="section-desc">
+        The automotive sales machine is engineered to isolate a single number: "What monthly payment fits your budget?" Here is what happens when you decide on autopilot:
+      </p>
+
+      <div class="pain-cards">
+        <div class="pain-card alert">
+          <h3>🚨 The "Escape Decision"</h3>
+          <p>Your current car breaks down or develops expensive issues. You feel furious, panicked, and trapped.</p>
+          <p>Instead of addressing the vehicle logically, you sign a 60-month contract just to escape the emotional discomfort of that week.</p>
+        </div>
+
+        <div class="pain-card">
+          <h3>🧊 The Invisible Fixed Costs</h3>
+          <p>A $550/mo teaser quickly becomes: $550 loan + $240 insurance + $160 fuel/charging + $45 DMV amortization + maintenance reserves.</p>
+          <p>You aren't signing up for $550. You are committing to over $1,000/month of unyielding fixed cash drain.</p>
+        </div>
+
+        <div class="pain-card">
+          <h3>💸 "Expected Money" Delusion</h3>
+          <p>Relying on an upcoming raise, bonus, tax refund, or settlement payout to justify a larger vehicle payment.</p>
+          <p>My accident settlement took 17 months. Life and vehicle bills do not pause while you wait.</p>
+        </div>
+
+        <div class="pain-card">
+          <h3>🔄 The Negative Equity Spiral</h3>
+          <p>Trading in an underwater car rolls unpaid debt into your next vehicle, quietly bloating payments to $700+ for an economy commuter.</p>
+          <p>Now one hasty decision dictates your next three financial years.</p>
+        </div>
+      </div>
+
+      <div class="quote-box-centered">
+        <div class="big-line">"Small expenses are visible. Fixed costs quietly own your future."</div>
+        <p>Cutting $5 lattes does not fix a structural $800/mo vehicle commitment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. INTERACTIVE MINI CALCULATOR -->
+  <section class="section-pad" style="background: #0B0C0E;">
+    <div class="container">
+      <div class="calc-section">
+        <div class="calc-header">
+          <div class="pill accent">Test The Math</div>
+          <h3>The Quick Real-Cost Stress Test</h3>
+          <p>See what your potential vehicle payment actually costs once the invisible bills arrive:</p>
+        </div>
+
+        <div class="calc-inputs">
+          <div class="input-group">
+            <label>Advertised Monthly Payment</label>
+            <div class="input-wrapper">
+              <span class="prefix">$</span>
+              <input type="number" id="calc-payment" value="520" placeholder="e.g. 520">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label>Monthly Insurance Quote</label>
+            <div class="input-wrapper">
+              <span class="prefix">$</span>
+              <input type="number" id="calc-insurance" value="210" placeholder="e.g. 210">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label>Fuel / Electric Charging (Est.)</label>
+            <div class="input-wrapper">
+              <span class="prefix">$</span>
+              <input type="number" id="calc-fuel" value="160" placeholder="e.g. 160">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label>DMV / Registration & Upkeep (Monthly Reserve)</label>
+            <div class="input-wrapper">
+              <span class="prefix">$</span>
+              <input type="number" id="calc-misc" value="75" placeholder="e.g. 75">
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-results">
+          <div class="calc-result-box">
+            <div class="res-label">True Monthly Drain</div>
+            <div class="res-val" id="res-monthly">$965</div>
+          </div>
+          <div class="calc-result-box">
+            <div class="res-label">12-Month Out-Of-Pocket</div>
+            <div class="res-val" id="res-annual" style="color: #fff;">$11,580</div>
+          </div>
+        </div>
+
+        <p class="calc-callout">
+          💡 The full toolkit includes the complete interactive Tally assessment & Notion calculator with negative equity rollover, loan vs. lease analysis, and 12-month income tests.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. WHAT'S INCLUDED -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="pill" style="display:table; margin: 0 auto 16px;">The Complete System</div>
+      <h2 class="section-title">What You Get Inside Before You Sign</h2>
+      <p class="section-desc">
+        A concise, zero-fluff decision framework built to be digested in 20 minutes and applied to any vehicle purchase or lease in 5 minutes.
+      </p>
+
+      <div class="curriculum-grid">
+        <div class="curriculum-card">
+          <span class="card-num">01 / CORE GUIDE</span>
+          <h4>The 20-Minute Field Guide</h4>
+          <p>The unfiltered, step-by-step post-mortem of how a free BMW turned into $69,000 lost across 5 cars, and the exact red flags to avoid.</p>
+        </div>
+
+        <div class="curriculum-card">
+          <span class="card-num">02 / LESSONS</span>
+          <h4>The 6 Expensive Traps</h4>
+          <p>Deep dive into Escape Decisions, Payment Illusions, Free Isn't Free, Fixed Cost Leaks, Tracking vs. Knowing, and the Expected Money Myth.</p>
+        </div>
+
+        <div class="curriculum-card">
+          <span class="card-num">03 / FRAMEWORK</span>
+          <h4>The 7-Step "DON'T DECIDE YET" System</h4>
+          <p>A systematic circuit breaker that forces space between emotional urgency and signing your financial freedom away on a dealer contract.</p>
+        </div>
+
+        <div class="curriculum-card">
+          <span class="card-num">04 / NOTION TOOLKIT</span>
+          <h4>"Before I Say Yes" Notion Template</h4>
+          <p>A duplicate-ready Notion workspace template you can copy to your account with 1 click to audit any future lease, financing deal, or large purchase.</p>
+        </div>
+
+        <div class="curriculum-card">
+          <span class="card-num">05 / WEB APP</span>
+          <h4>Interactive Tally Assessment</h4>
+          <p>Mobile-optimized, zero-app-required web form to instantly run the numbers, check emotional triggers, and evaluate downside risks on your phone.</p>
+        </div>
+
+        <div class="curriculum-card">
+          <span class="card-num">06 / ON-THE-GO</span>
+          <h4>Real Car Cost Calculator</h4>
+          <p>Quickly stress test lease vs finance terms, negative equity additions, and DMV reserves while sitting on the showroom floor.</p>
+        </div>
+      </div>
+
+      <!-- 7 STEPS BREAKDOWN -->
+      <div class="framework-flow">
+        <h3>The 7-Step DON'T DECIDE YET Framework</h3>
+        <div class="step-pills">
+          <div class="step-pill"><span class="step-idx">01</span> STOP (Emotional Pause)</div>
+          <div class="step-pill"><span class="step-idx">02</span> NAME THE ACTUAL PROBLEM</div>
+          <div class="step-pill"><span class="step-idx">03</span> LIST THREE OTHER OPTIONS</div>
+          <div class="step-pill"><span class="step-idx">04</span> CALCULATE THE REAL COST</div>
+          <div class="step-pill"><span class="step-idx">05</span> CHECK THE FUTURE (Stress Test)</div>
+          <div class="step-pill"><span class="step-idx">06</span> WAIT (24h–7d Cooldown)</div>
+          <div class="step-pill"><span class="step-idx">07</span> INTENTIONAL DECISION</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. HARD STATS -->
+  <section class="section-pad" style="background: #0E0F12;">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">$69,000</div>
+          <div class="stat-label">Spent on Cars (Zero Left)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">4½ Years</div>
+          <div class="stat-label">Compounding Mistakes</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">20 Min</div>
+          <div class="stat-label">Reading Time</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">5 Min</div>
+          <div class="stat-label">Decision Audit Exercise</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. HOW IT WORKS -->
+  <section class="section-pad">
+    <div class="container-narrow">
+      <div class="pill" style="display:table; margin: 0 auto 16px;">Simple Process</div>
+      <h2 class="section-title">How To Use This Before You Sign</h2>
+      <p class="section-desc">No 400-page textbooks. No complex accounting spreadsheets.</p>
+
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <div style="background: var(--bg-card); border: 1px solid var(--border); padding: 22px; border-radius: var(--radius); display: flex; gap: 16px; align-items: flex-start;">
+          <span style="font-family: var(--font-mono); font-size: 18px; color: var(--accent); font-weight: 700;">STEP 1</span>
+          <div>
+            <h4 style="font-size: 17px; margin-bottom: 4px;">Get Instant Access ($27)</h4>
+            <p style="font-size: 14px; color: var(--text-muted);">Secure one-time checkout via Whop. Receive instant links to the digital guide, Notion workspace, and mobile calculator.</p>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-card); border: 1px solid var(--border); padding: 22px; border-radius: var(--radius); display: flex; gap: 16px; align-items: flex-start;">
+          <span style="font-family: var(--font-mono); font-size: 18px; color: var(--accent); font-weight: 700;">STEP 2</span>
+          <div>
+            <h4 style="font-size: 17px; margin-bottom: 4px;">Read The 20-Minute Guide</h4>
+            <p style="font-size: 14px; color: var(--text-muted);">Understand the 6 traps. Recognize the exact emotional patterns that dealerships exploit before you ever set foot on a lot.</p>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-card); border: 1px solid var(--border); padding: 22px; border-radius: var(--radius); display: flex; gap: 16px; align-items: flex-start;">
+          <span style="font-family: var(--font-mono); font-size: 18px; color: var(--accent); font-weight: 700;">STEP 3</span>
+          <div>
+            <h4 style="font-size: 17px; margin-bottom: 4px;">Run The 5-Minute "Before I Say Yes" Tool</h4>
+            <p style="font-size: 14px; color: var(--text-muted);">Type in your real numbers and run the Future Test: <em>What if my income drops? What if expected money never arrives? Who else is affected?</em></p>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-card); border: 1px solid var(--border); padding: 22px; border-radius: var(--radius); display: flex; gap: 16px; align-items: flex-start;">
+          <span style="font-family: var(--font-mono); font-size: 18px; color: var(--accent); font-weight: 700;">STEP 4</span>
+          <div>
+            <h4 style="font-size: 17px; margin-bottom: 4px;">Decide Deliberately</h4>
+            <p style="font-size: 14px; color: var(--text-muted);">Buy it, lease it, choose a cheaper alternative, repair what you have, or walk away. Whatever you choose, you do it with eyes wide open.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FOUNDER STORY / CREDIBILITY -->
+  <section class="section-pad" style="background: #0E0F12;">
+    <div class="container">
+      <div class="story-card">
+        <div class="pill accent">Raw Transparency</div>
+        <h3>"I'm Not A Financial Advisor. I'm Someone Who Learned This The Expensive Way."</h3>
+        
+        <p>
+          When I arrived in Los Angeles, I had ambitious dreams and was making around $4,000/month while paying $1,100 in rent. Then my uncle gave me an older BMW 5 Series.
+        </p>
+        <p>
+          That "free" car needed work. Instead of making a calm, rational decision to sell it for whatever cash I could get, I traded it in for $1,500 and financed a Kia Niro for $467/month. That felt manageable.
+        </p>
+        <p>
+          Six months later, it was totaled in a collision. Desperate for wheels, I bought a second new Niro for $732/month. When severe transmission defects set in for months, I grew furious and overwhelmed. I leased a Tesla Model 3 for $600/month just to get out of the misery. Then I traded the defective Niro into a Kia Forte with rolled negative equity for $650/month.
+        </p>
+        <p>
+          For an entire year, I was carrying two cars and all their bills at the same time. Eventually, I surrendered the loan, damaged my friend's credit, lost roughly $69,000, and moved back home broke with zero cars to show for it.
+        </p>
+        <p>
+          I can't go back and get my $69,000 back. But I can make sure the experience doesn't end there. <strong>You don't need to make perfect financial decisions. You just need to make cheaper mistakes than I did.</strong>
+        </p>
+
+        <div class="signature-block">
+          <strong>Bruno Diaz</strong><br>
+          Creator, <em>Make Cheaper Mistakes Than I Did</em>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. VALUE STACK -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="pill" style="display:table; margin: 0 auto 16px;">Value Breakdown</div>
+      <h2 class="section-title">The Complete Decision Kit</h2>
+      <p class="section-desc">What you get compared to what a single hasty financing mistake costs:</p>
+
+      <div class="stack-box">
+        <div class="stack-item">
+          <span>The Core 20-Minute Digital Field Guide</span>
+          <span class="val">$47 Value</span>
+        </div>
+        <div class="stack-item">
+          <span>The 6 Expensive Traps Unfiltered Case Study</span>
+          <span class="val">$20 Value</span>
+        </div>
+        <div class="stack-item">
+          <span>The 7-Step "DON'T DECIDE YET" Framework</span>
+          <span class="val">$27 Value</span>
+        </div>
+        <div class="stack-item">
+          <span>"Before I Say Yes" Duplicate-Ready Notion Template</span>
+          <span class="val">$17 Value</span>
+        </div>
+        <div class="stack-item">
+          <span>Interactive Mobile Tally Form & Calculator</span>
+          <span class="val">$17 Value</span>
+        </div>
+
+        <div class="stack-total">
+          <div>
+            <div class="bold-label">Total Real-World Value</div>
+            <span style="font-size: 13px; color: var(--text-muted);">One single bad car lease mistake: $10,000+</span>
+          </div>
+          <div class="deal-price">$27</div>
+        </div>
+
+        <div style="margin-top: 24px;">
+          <a href="https://whop.com/make-cheaper-mistakes-than-i-did/don-t-make-my-69-000-mistake/" class="btn btn-primary btn-block">
+            Get The Complete Decision Guide — $27
+          </a>
+        </div>
+        <div class="cta-subtext" style="justify-content: center;">
+          <span>One-time purchase • Lifetime personal license • Instant access</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. 30-DAY MONEY-BACK GUARANTEE -->
+  <section class="section-pad" style="background: #0E0F12;">
+    <div class="container">
+      <div class="guarantee-wrap">
+        <div class="guarantee-badge">🛡️</div>
+        <h3>The 30-Day "Cheaper Mistakes" Guarantee</h3>
+        <p>
+          Read the guide. Use the framework. Try the decision tool on a real vehicle deal. If you genuinely don’t think it was worth the $27, message me within 30 days and I will refund you in full.
+        </p>
+        <p style="margin-top: 12px; font-weight: 600; color: #fff;">
+          No hoops. No convincing me. No hard feelings.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. FAQ ACCORDION -->
+  <section class="section-pad">
+    <div class="container-narrow">
+      <div class="pill" style="display:table; margin: 0 auto 16px;">Common Questions</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-desc">Everything you need to know before checking out.</p>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            What exactly do I get when I purchase?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              You get immediate lifetime access to the complete digital PDF guide ("Before You Sign: A Car Financing & Leasing Decision Guide"), the 6 foundational lessons, the 7-step DON'T DECIDE YET framework, the interactive Tally web evaluation form, and the duplicate-ready Notion workspace tool.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Do I need a paid Notion subscription to use this?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              No. The Notion workspace works 100% free on any basic Notion account. Plus, you get direct access to the web-based Tally calculator, which requires zero accounts and runs right inside your phone's mobile browser.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Is this formal financial or legal advice?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              No. I am not a certified financial planner, CPA, or attorney. This is a practical, battle-tested decision-making circuit breaker created from a real $69,000 personal financial catastrophe to help you calculate true ongoing costs and avoid high-pressure sales traps.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            How long does the system take to read and apply?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              The guide is purposefully concise—it takes about 20 minutes to read from start to finish. The "Before I Say Yes" decision audit takes roughly 5 minutes to complete for any car or loan offer on the table.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            How does the 30-day refund guarantee work?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Simply read the guide and try the decision tool on a potential vehicle purchase. If you don't feel it gave you immense clarity and value, send me a message through Whop within 30 days for a prompt, full refund.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Is this a recurring subscription?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              No. It is a strictly one-time payment of $27 with lifetime access and zero hidden fees or automatic renewals.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. FINAL CTA -->
+  <section class="section-pad" style="background: linear-gradient(180deg, #0B0C0E 0%, #15161C 100%); text-align: center;">
+    <div class="container-narrow">
+      <div class="pill accent">Your Future Deserves This Pause</div>
+      <h2 style="font-size: 38px; margin-bottom: 18px;">
+        Make Cheaper Mistakes Than I Did.
+      </h2>
+      <p style="font-size: 16px; color: var(--text-muted); line-height: 1.6; margin-bottom: 30px;">
+        A $500 monthly payment doesn't always cost $500. One decision leads to the next until you're looking backward wondering where your money went. Give yourself 20 minutes before you sign a 5-year contract.
+      </p>
+
+      <div style="max-width: 440px; margin: 0 auto;">
+        <a href="https://whop.com/make-cheaper-mistakes-than-i-did/don-t-make-my-69-000-mistake/" class="btn btn-primary btn-block" style="font-size: 18px; padding: 18px;">
+          Get Instant Access Now — $27
+        </a>
+        <div class="cta-subtext" style="justify-content: center; margin-top: 14px;">
+          <span>⚡ Instant Digital Access</span>
+          <span>🛡️ 30-Day Money-Back Guarantee</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. FOOTER -->
+  <footer>
+    <div class="container">
+      <p style="margin-bottom: 8px;">&copy; Make Cheaper Mistakes Than I Did. All rights reserved.</p>
+      <p style="font-size: 11.5px; max-width: 600px; margin: 0 auto; color: #4E505B;">
+        Disclaimer: This publication and tool are intended solely for educational and informational purposes and do not constitute certified financial, legal, or investment advice.
+      </p>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY CTA BAR -->
+  <div class="mobile-sticky-cta">
+    <div class="price-tag">
+      Total: <strong>$27</strong> <span style="font-size: 11px; color: var(--accent);">(One-time)</span>
+    </div>
+    <a href="https://whop.com/make-cheaper-mistakes-than-i-did/don-t-make-my-69-000-mistake/" class="btn btn-primary" style="padding: 10px 18px; font-size: 14px; min-height: 42px;">
+      Get Access
+    </a>
+  </div>
+
+  <!-- INTERACTIVE LOGIC (FAQS & CALCULATOR) -->
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const answer = item.querySelector('.faq-answer');
+        const isActive = item.classList.contains('active');
+
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('active');
+          i.querySelector('.faq-answer').style.maxHeight = null;
+        });
+
+        // Open clicked if not active
+        if (!isActive) {
+          item.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+      });
+    });
+
+    // Real-Time Mini Calculator
+    const inputPayment = document.getElementById('calc-payment');
+    const inputInsurance = document.getElementById('calc-insurance');
+    const inputFuel = document.getElementById('calc-fuel');
+    const inputMisc = document.getElementById('calc-misc');
+    const resMonthly = document.getElementById('res-monthly');
+    const resAnnual = document.getElementById('res-annual');
+
+    function updateCalculator() {
+      const pay = parseFloat(inputPayment.value) || 0;
+      const ins = parseFloat(inputInsurance.value) || 0;
+      const fuel = parseFloat(inputFuel.value) || 0;
+      const misc = parseFloat(inputMisc.value) || 0;
+
+      const monthlyTotal = pay + ins + fuel + misc;
+      const annualTotal = monthlyTotal * 12;
+
+      resMonthly.textContent = '$' + Math.round(monthlyTotal).toLocaleString();
+      resAnnual.textContent = '$' + Math.round(annualTotal).toLocaleString();
+    }
+
+    [inputPayment, inputInsurance, inputFuel, inputMisc].forEach(input => {
+      input.addEventListener('input', updateCalculator);
+    });
+    updateCalculator();
+  </script>
+</body>
+</html>
