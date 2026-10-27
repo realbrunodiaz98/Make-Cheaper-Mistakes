@@ -12,25 +12,25 @@ export const FounderStory: React.FC = () => {
           </div>
 
           <h2 className="text-2xl sm:text-3xl font-extrabold text-white font-heading tracking-tight">
-            “I’m Not A Financial Advisor.<br />
-            I’m Someone Who Learned This The Expensive Way.”
+            I’m Not A Financial Advisor.<br />
+            I’m Someone Who Learned This The Expensive Way.
           </h2>
 
           <div className="space-y-4 text-sm sm:text-base text-[#DFDFE3] leading-relaxed">
             <p>
-              When I arrived in Los Angeles, I was scraping by on $2,000 a month delivering food. My uncle generously gifted me his older BMW 530i, but after sinking $2,000 into constant repairs, I traded it in for a brand-new Kia Niro at $467/month. That single emotional decision started a brutal financing domino effect.
+              When I arrived in Los Angeles, I was living on $2,000 a month from food deliveries. My uncle gave me his older BMW 530i, but after spending $2,000 on repairs, I traded it for a new Kia Niro at $467/month. That emotional choice set off a harsh chain reaction.
             </p>
 
             <p>
-              Six months later, that car was totaled. Desperate for wheels to get to work, I financed a second Niro for $732/month. When severe defects left it sitting in the shop, I grew furious and overwhelmed. To escape the misery, I leased a Tesla Model 3 for $600/month.
+              Six months later, that car was totaled. Needing wheels for work, I financed another Niro for $732/month. When major defects left it in the shop, I felt furious and overwhelmed. To escape, I leased a Tesla Model 3 for $600/month.
             </p>
 
             <p>
-              To stop the abandoned Kia penalties, a friend helped me roll the negative equity into a Kia Forte for $650/month. For nearly an entire year, I was carrying two cars and all their associated costs simultaneously.
+              To avoid penalties for the abandoned Kia, a friend helped me roll the negative equity into a Kia Forte for $650/month. For almost a year, I had two cars and all their costs.
             </p>
 
             <p>
-              Eventually, the financial weight broke me. I surrendered the Forte note, betraying my friend&apos;s financial trust. But the bleeding didn&apos;t stop. I kept the Tesla, carrying a relentless $1,000/mo fixed operating cost while my income became violently unstable, bouncing between four different jobs over two years. That rigid monthly drain slowly choked me out. I made my last payment in April 2026 but got laid off the day after and decided to moved back home completely broke. The Tesla was repossessed in August. I never even made it to the finish line because the 36-month lease was up in September, 2026.
+              Eventually, the financial burden crushed me. I gave up the Forte, breaking my friend&apos;s trust. But the struggle didn’t end. I kept the Tesla, facing a constant $1,000/month cost while I cycled through four jobs and my income fluctuated over two years. That monthly drain slowly suffocated me. I made my last payment in April 2026, but I got laid off the next day and decided to move back home broke. The Tesla was repossessed in August. I never reached the finish line because the 36-month lease ended in September 2026.
             </p>
           </div>
 
