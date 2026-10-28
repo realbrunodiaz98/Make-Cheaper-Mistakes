@@ -19,7 +19,7 @@ export const CarTimeline: React.FC<CarTimelineProps> = ({ onSelectCar }) => {
             <span>Unfiltered Case Study</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-heading">
-            5 Cars. 4½ Years. Zero Remaining.
+            5 Cars. 5 Years. Zero Remaining.
           </h2>
           <p className="mt-3 text-sm sm:text-base text-[#8E909B] leading-relaxed">
             This isn’t theory from an armchair personal finance blogger. This guide was born from an actual compounding cascade of car commitments in Los Angeles.

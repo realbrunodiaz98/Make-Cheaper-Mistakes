@@ -37,7 +37,7 @@ export const FounderStory: React.FC = () => {
           {/* Hard Cost Accounting Table */}
           <div className="mt-6 pt-6 border-t border-[#242733]">
             <h3 className="text-xs font-semibold uppercase tracking-wider text-[#8E909B] mb-3">
-              Where The $69,000 Actually Went Over 4½ Years:
+              Where The $69,000 Actually Went Over 5 Years:
             </h3>
 
             <div className="bg-[#0E0F13] border border-[#242733] rounded-xl overflow-hidden text-xs">
@@ -62,7 +62,7 @@ export const FounderStory: React.FC = () => {
                 <span className="font-mono-numbers font-semibold text-white">~$5,100</span>
               </div>
               <div className="flex justify-between p-3 bg-[#C29B7F]/10 text-[#C29B7F] font-bold">
-                <span>Grand Total Spent Across 4.5 Years</span>
+                <span>Grand Total Spent Across 5 Years</span>
                 <span className="font-mono-numbers text-sm text-white">~$69,000 (0 Cars Owned)</span>
               </div>
             </div>

@@ -27,17 +27,17 @@ export const Hero: React.FC = () => {
             </h1>
 
             <p className="text-base sm:text-lg text-[#8E909B] leading-relaxed max-w-2xl">
-              Before you finance or lease a car, uncover the hidden carry costs beyond the dealer’s monthly teaser, test your future assumptions, and stop an expensive mistake before it starts.
+              Before you finance or lease a car, check for hidden costs beyond the dealer’s monthly offer. Also, review your future assumptions. This way, you can avoid a costly mistake before it happens.
             </p>
 
             {/* Author Hook Quote */}
             <div className="bg-[#14161C] border border-[#242733] rounded-xl p-5 sm:p-6 text-sm sm:text-base text-[#DFDFE3] leading-relaxed shadow-sm">
               <p className="italic text-[#DFDFE3]">
-                “I spent roughly <strong className="text-white font-semibold">$69,000 on cars over 4½ years</strong>. And I don’t have a single car to show for it. This is the 20-minute guide and 5-minute decision tool I wish I had before the first domino fell.”
+                “I spent roughly <strong className="text-white font-semibold">$69,000 on cars in less than 5 years</strong>. And I don’t have a single car to show for it. This is the guide I wish I had before the first domino fell.”
               </p>
               <div className="mt-3 flex items-center justify-between text-xs text-[#8E909B] font-medium pt-3 border-t border-[#242733]">
-                <span>— Bruno Diaz, Los Angeles case study</span>
-                <span className="text-[#C29B7F]">5 Cars · 4.5 Years · $0 Equity</span>
+                <span>— Bruno Diaz</span>
+                <span className="text-[#C29B7F]">5 Cars · 5 Years · $0 Equity</span>
               </div>
             </div>
 
@@ -156,8 +156,7 @@ export const Hero: React.FC = () => {
                 <div className="flex items-baseline justify-between">
                   <div>
                     <span className="text-xs text-[#8E909B] block">One-time payment</span>
-                    <div className="flex items-baseline gap-2">
-                      <span className="text-sm text-[#5C5E68] line-through font-mono-numbers">$47</span>
+                    <div className="flex items-baseline">
                       <span className="text-3xl font-extrabold text-white font-heading font-mono-numbers">$27</span>
                     </div>
                   </div>
@@ -193,7 +192,7 @@ export const Hero: React.FC = () => {
           </div>
 
           <div className="bg-[#14161C] border border-[#242733] rounded-xl p-4 text-center">
-            <div className="text-2xl sm:text-3xl font-extrabold text-white font-heading font-mono-numbers">4½ Years</div>
+            <div className="text-2xl sm:text-3xl font-extrabold text-white font-heading font-mono-numbers">5 Years</div>
             <div className="text-xs text-[#8E909B] mt-1 uppercase tracking-wider">Compounding Mistakes</div>
           </div>
 
