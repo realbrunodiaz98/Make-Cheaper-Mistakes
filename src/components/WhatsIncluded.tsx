@@ -5,10 +5,10 @@ import { BookOpen, Smartphone, ShieldCheck, Sparkles, ArrowRight } from 'lucide-
 export const WhatsIncluded: React.FC = () => {
   return (
     <section className="py-16 sm:py-24 bg-[#0B0C0E] border-b border-[#242733]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto mobile-container-pad px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <div className="flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C29B7F] mb-2">
+          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-xs font-semibold uppercase tracking-wider text-[#C29B7F] mb-2">
             <span>One Central Digital Product</span>
             <span aria-hidden="true">·</span>
             <span>Everything Inside</span>
@@ -22,18 +22,18 @@ export const WhatsIncluded: React.FC = () => {
         </div>
 
         {/* Central Product Container: One Guide, Everything Inside */}
-        <div className="bg-[#14161C] border-2 border-[#C29B7F]/40 rounded-2xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+        <div className="bg-[#14161C] border-2 border-[#C29B7F]/40 rounded-2xl p-5 sm:p-10 shadow-2xl relative overflow-hidden">
           {/* Header of Central Guide */}
           <div className="pb-6 border-b border-[#242733]">
-            <div className="flex items-center gap-3">
+            <div className="flex items-start sm:items-center gap-3">
               <div className="w-12 h-12 rounded-xl bg-[#C29B7F]/15 border border-[#C29B7F]/30 flex items-center justify-center text-[#C29B7F] shrink-0">
                 <BookOpen className="w-6 h-6" />
               </div>
-              <div>
-                <span className="text-[10px] font-mono-numbers font-bold text-[#C29B7F] bg-[#C29B7F]/10 px-2.5 py-0.5 rounded border border-[#C29B7F]/20 uppercase">
+              <div className="min-w-0">
+                <span className="inline-block text-[10px] font-mono-numbers font-bold text-[#C29B7F] bg-[#C29B7F]/10 px-2.5 py-0.5 rounded border border-[#C29B7F]/20 uppercase">
                   CENTRAL READ-ONLY NOTION GUIDE
                 </span>
-                <h3 className="text-xl sm:text-2xl font-bold text-white font-heading mt-1">
+                <h3 className="text-lg sm:text-2xl font-bold text-white font-heading mt-1">
                   Before You Sign: A Car Financing & Leasing Decision Guide
                 </h3>
               </div>
@@ -43,15 +43,15 @@ export const WhatsIncluded: React.FC = () => {
           {/* 3 Core Components Grid */}
           <div className="mt-8">
             <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#8E909B] mb-5">
-              <Sparkles className="w-4 h-4 text-[#C29B7F]" />
+              <Sparkles className="w-4 h-4 text-[#C29B7F] shrink-0" />
               <span>Three Core Components Inside The Guide:</span>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mobile-stack-grid">
               {/* Component 1: The Core Content (Inside The Guide) */}
-              <div className="bg-[#0E0F13] border border-[#242733] rounded-xl p-6 flex flex-col justify-between hover:border-[#383C4D] transition-colors group">
+              <div className="bg-[#0E0F13] border border-[#242733] rounded-xl p-5 sm:p-6 flex flex-col justify-between hover:border-[#383C4D] transition-colors group min-w-0">
                 <div>
-                  <div className="flex items-center justify-between mb-4">
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
                     <span className="font-mono-numbers text-[10px] font-bold text-[#C29B7F] tracking-wider uppercase bg-[#C29B7F]/10 px-2 py-0.5 rounded border border-[#C29B7F]/20">
                       The Core Content (Inside The Guide)
                     </span>

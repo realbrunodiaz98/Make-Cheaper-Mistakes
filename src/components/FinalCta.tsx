@@ -8,7 +8,7 @@ export const FinalCta: React.FC = () => {
       {/* Background ambient lighting */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#C29B7F]/10 via-transparent to-transparent pointer-events-none" />
 
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 relative z-10 space-y-6">
+      <div className="max-w-3xl mx-auto mobile-container-pad px-4 sm:px-6 relative z-10 space-y-6">
         <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C29B7F] font-mono-numbers">
           <span>YOUR FUTURE DESERVES THIS PAUSE</span>
         </div>
@@ -32,7 +32,7 @@ export const FinalCta: React.FC = () => {
             <ArrowUpRight className="w-5 h-5" />
           </a>
 
-          <div className="flex items-center justify-center gap-5 text-xs text-[#8E909B]">
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs text-[#8E909B]">
             <span className="inline-flex items-center gap-1.5">
               <Zap className="w-3.5 h-3.5 text-[#C29B7F]" />
               <span>Instant Digital Access</span>

@@ -11,10 +11,10 @@ export const FaqSection: React.FC = () => {
 
   return (
     <section id="faq" className="py-16 sm:py-24 bg-[#0E0F13] border-b border-[#242733]">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6">
+      <div className="max-w-3xl mx-auto mobile-container-pad px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <div className="flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C29B7F] mb-2">
+          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-xs font-semibold uppercase tracking-wider text-[#C29B7F] mb-2">
             <span>Common Questions</span>
             <span aria-hidden="true">·</span>
             <span>Zero Fine Print</span>

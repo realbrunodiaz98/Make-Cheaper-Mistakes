@@ -10,10 +10,10 @@ export const FrameworkSection: React.FC = () => {
 
   return (
     <section id="framework" className="py-16 sm:py-24 bg-[#0E0F13] border-b border-[#242733]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto mobile-container-pad px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
-          <div className="flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C29B7F] mb-2">
+          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-xs font-semibold uppercase tracking-wider text-[#C29B7F] mb-2">
             <span>The Decision Circuit Breaker</span>
             <span aria-hidden="true">·</span>
             <span>7 Actionable Steps</span>
@@ -36,7 +36,7 @@ export const FrameworkSection: React.FC = () => {
                 key={step.number}
                 type="button"
                 onClick={() => setActiveStepIndex(idx)}
-                className={`p-3 rounded-xl border text-left transition-all ${
+                className={`min-w-0 p-3 rounded-xl border text-left transition-all ${
                   isActive
                     ? 'bg-[#C29B7F] border-[#C29B7F] text-[#0B0C0E] shadow-md font-bold'
                     : 'bg-[#14161C] border-[#242733] text-[#8E909B] hover:text-white hover:border-[#383C4D]'
@@ -55,12 +55,12 @@ export const FrameworkSection: React.FC = () => {
         </div>
 
         {/* Active Step Deep-Dive Card */}
-        <div className="bg-[#14161C] border border-[#242733] rounded-2xl p-6 sm:p-10 shadow-xl">
-          <div className="flex flex-col lg:flex-row gap-8 items-start justify-between">
+        <div className="bg-[#14161C] border border-[#242733] rounded-2xl p-5 sm:p-10 shadow-xl">
+          <div className="flex flex-col lg:flex-row gap-8 items-start justify-between mobile-stack">
             {isLocked ? (
               /* Locked Member State for Steps 03-07 */
-              <div className="space-y-5 max-w-2xl w-full">
-                <div className="flex items-center gap-2">
+              <div className="space-y-5 max-w-2xl w-full min-w-0">
+                <div className="flex flex-wrap items-center gap-2">
                   <span className="font-mono-numbers text-xs font-bold text-[#E05252] bg-[#E05252]/10 px-2.5 py-1 rounded border border-[#E05252]/20 flex items-center gap-1.5">
                     <Lock className="w-3.5 h-3.5" />
                     STEP {activeStep.number} OF 07
@@ -97,8 +97,8 @@ export const FrameworkSection: React.FC = () => {
               </div>
             ) : (
               /* Unlocked State for Steps 01 & 02 */
-              <div className="space-y-4 max-w-2xl">
-                <div className="flex items-center gap-2">
+              <div className="space-y-4 max-w-2xl w-full min-w-0">
+                <div className="flex flex-wrap items-center gap-2">
                   <span className="font-mono-numbers text-xs font-bold text-[#C29B7F] bg-[#C29B7F]/10 px-2.5 py-1 rounded border border-[#C29B7F]/20">
                     STEP {activeStep.number} OF 07
                   </span>

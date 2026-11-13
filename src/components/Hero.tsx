@@ -8,20 +8,11 @@ export const Hero: React.FC = () => {
       {/* Subtle background ambient glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-[#C29B7F]/5 rounded-full blur-[140px] pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
-        {/* Anti-slop zero-pill kicker */}
-        <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C29B7F] mb-4">
-          <span>Decision Circuit Breaker</span>
-          <span aria-hidden="true">·</span>
-          <span>By Bruno Diaz</span>
-          <span aria-hidden="true">·</span>
-          <span>Instant Digital Access</span>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+      <div className="max-w-6xl mx-auto mobile-container-pad px-4 sm:px-6 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center mobile-stack-grid">
           {/* Left Column: Copy & Actions */}
-          <div className="lg:col-span-7 space-y-6">
-            <h1 className="text-3xl sm:text-5xl lg:text-[3.25rem] font-extrabold text-white tracking-tight leading-[1.12] font-heading">
+          <div className="lg:col-span-7 min-w-0 space-y-6">
+            <h1 className="hero-headline text-3xl sm:text-5xl lg:text-[3.25rem] font-extrabold text-white tracking-tight leading-[1.12] font-heading">
               The Monthly Payment Is{' '}
               <span className="text-[#C29B7F]">Only The Beginning.</span>
             </h1>
@@ -35,7 +26,7 @@ export const Hero: React.FC = () => {
               <p className="italic text-[#DFDFE3]">
                 “I spent roughly <strong className="text-white font-semibold">$69,000 on cars in less than 5 years</strong>. And I don’t have a single car to show for it. This is the guide I wish I had before the first domino fell.”
               </p>
-              <div className="mt-3 flex items-center justify-between text-xs text-[#8E909B] font-medium pt-3 border-t border-[#242733]">
+              <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-xs text-[#8E909B] font-medium pt-3 border-t border-[#242733]">
                 <span>— Bruno Diaz</span>
                 <span className="text-[#C29B7F]">5 Cars · 5 Years · $0 Equity</span>
               </div>
@@ -82,11 +73,11 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Right Column: Digital Delivery Manifest & Value Card (No picture) */}
-          <div className="lg:col-span-5">
-            <div className="bg-[#14161C] border border-[#242733] rounded-2xl p-6 sm:p-7 shadow-2xl relative">
+          <div className="lg:col-span-5 min-w-0">
+            <div className="bg-[#14161C] border border-[#242733] rounded-2xl p-5 sm:p-7 shadow-2xl relative">
               {/* Manifest Header */}
               <div className="border-b border-[#242733] pb-4 mb-5">
-                <div className="flex items-center justify-between gap-2 mb-1">
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-1.5">
                   <span className="font-mono-numbers text-[11px] font-bold uppercase tracking-wider text-[#C29B7F]">
                     OFFICIAL DIGITAL PACKAGE
                   </span>
@@ -175,7 +166,7 @@ export const Hero: React.FC = () => {
                   <ArrowUpRight className="w-4 h-4" />
                 </a>
 
-                <div className="flex items-center justify-between text-[11px] text-[#8E909B] pt-1">
+                <div className="flex flex-wrap items-center justify-between gap-2 text-[11px] text-[#8E909B] pt-1">
                   <span>🛡️ 30-Day Money-Back Guarantee</span>
                   <span className="text-[#DFDFE3]">Instant Read-Only Access</span>
                 </div>
@@ -185,7 +176,7 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Full-width 4-Column KPI Strip below hero split (Mandatory Layout Math) */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-12 pt-8 border-t border-[#242733]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-12 pt-8 border-t border-[#242733] mobile-stack-grid">
           <div className="bg-[#14161C] border border-[#242733] rounded-xl p-4 text-center">
             <div className="text-2xl sm:text-3xl font-extrabold text-[#C29B7F] font-heading font-mono-numbers">$69,000</div>
             <div className="text-xs text-[#8E909B] mt-1 uppercase tracking-wider">Spent On Cars (0 Left)</div>

@@ -3,9 +3,9 @@ import React from 'react';
 export const FounderStory: React.FC = () => {
   return (
     <section className="py-16 sm:py-24 bg-[#0E0F13] border-b border-[#242733]">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="bg-[#14161C] border border-[#242733] rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
-          <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C29B7F]">
+      <div className="max-w-4xl mx-auto mobile-container-pad px-4 sm:px-6">
+        <div className="bg-[#14161C] border border-[#242733] rounded-2xl p-5 sm:p-10 shadow-2xl space-y-6">
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-semibold uppercase tracking-wider text-[#C29B7F]">
             <span>Raw Transparency</span>
             <span aria-hidden="true">·</span>
             <span>Why This Guide Exists</span>
@@ -41,29 +41,29 @@ export const FounderStory: React.FC = () => {
             </h3>
 
             <div className="bg-[#0E0F13] border border-[#242733] rounded-xl overflow-hidden text-xs">
-              <div className="flex justify-between p-3 border-b border-[#242733]/60">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 p-3 border-b border-[#242733]/60 mobile-stack">
                 <span className="text-[#DFDFE3]">Down Payments & Upfront Drive-Off Cash</span>
-                <span className="font-mono-numbers font-semibold text-white">~$6,500</span>
+                <span className="font-mono-numbers font-semibold text-white shrink-0">~$6,500</span>
               </div>
-              <div className="flex justify-between p-3 border-b border-[#242733]/60">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 p-3 border-b border-[#242733]/60 mobile-stack">
                 <span className="text-[#DFDFE3]">Monthly Loan & Lease Payments (5 cars over 54 months)</span>
-                <span className="font-mono-numbers font-semibold text-white">~$34,200</span>
+                <span className="font-mono-numbers font-semibold text-white shrink-0">~$34,200</span>
               </div>
-              <div className="flex justify-between p-3 border-b border-[#242733]/60">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 p-3 border-b border-[#242733]/60 mobile-stack">
                 <span className="text-[#DFDFE3]">Auto Insurance (LA full coverage, carrying two cars at once)</span>
-                <span className="font-mono-numbers font-semibold text-white">~$14,800</span>
+                <span className="font-mono-numbers font-semibold text-white shrink-0">~$14,800</span>
               </div>
-              <div className="flex justify-between p-3 border-b border-[#242733]/60">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 p-3 border-b border-[#242733]/60 mobile-stack">
                 <span className="text-[#DFDFE3]">Fuel, Tesla Supercharging, & DMV Annual Registrations</span>
-                <span className="font-mono-numbers font-semibold text-white">~$8,400</span>
+                <span className="font-mono-numbers font-semibold text-white shrink-0">~$8,400</span>
               </div>
-              <div className="flex justify-between p-3 border-b border-[#242733]/60">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 p-3 border-b border-[#242733]/60 mobile-stack">
                 <span className="text-[#DFDFE3]">Negative Equity Rollover & Surrender Loss</span>
-                <span className="font-mono-numbers font-semibold text-white">~$5,100</span>
+                <span className="font-mono-numbers font-semibold text-white shrink-0">~$5,100</span>
               </div>
-              <div className="flex justify-between p-3 bg-[#C29B7F]/10 text-[#C29B7F] font-bold">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 p-3 bg-[#C29B7F]/10 text-[#C29B7F] font-bold mobile-stack">
                 <span>Grand Total Spent Across 5 Years</span>
-                <span className="font-mono-numbers text-sm text-white">~$69,000 (0 Cars Owned)</span>
+                <span className="font-mono-numbers text-sm text-white shrink-0">~$69,000 (0 Cars Owned)</span>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ export const FounderStory: React.FC = () => {
           </div>
 
           {/* Signature Block */}
-          <div className="pt-4 border-t border-[#242733] flex items-center justify-between text-xs text-[#8E909B]">
+          <div className="pt-4 border-t border-[#242733] flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-[#8E909B] mobile-stack">
             <div className="flex items-center gap-3">
               <img
                 src="/assets/aistudio/Headshot__c92a8902.png"
@@ -90,7 +90,7 @@ export const FounderStory: React.FC = () => {
                 <span>Creator, <em>Make Cheaper Mistakes Than I Did</em></span>
               </div>
             </div>
-            <span className="text-[#C29B7F] font-mono-numbers">Los Angeles, 2022-2026</span>
+            <span className="text-[#C29B7F] font-mono-numbers sm:text-right">Los Angeles, 2022-2026</span>
           </div>
         </div>
       </div>

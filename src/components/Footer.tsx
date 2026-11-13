@@ -4,8 +4,8 @@ import { CHECKOUT_URL } from '../data/content';
 export const Footer: React.FC = () => {
   return (
     <footer className="py-12 bg-[#08090B] text-[#5C5E68] text-xs">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-[#242733]/60">
+      <div className="max-w-6xl mx-auto mobile-container-pad px-4 sm:px-6">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-[#242733]/60 text-center sm:text-left mobile-stack">
           <div>
             <span className="text-base font-bold text-white font-heading tracking-tight block">
               Make Cheaper Mistakes
@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
             </span>
           </div>
 
-          <div className="flex flex-wrap items-center gap-5 text-xs text-[#8E909B]">
+          <div className="flex flex-wrap items-center justify-center sm:justify-end gap-x-5 gap-y-2 text-xs text-[#8E909B]">
             <a href="#story" className="hover:text-white transition-colors">
               Story
             </a>

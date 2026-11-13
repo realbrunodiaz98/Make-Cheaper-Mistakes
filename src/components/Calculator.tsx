@@ -99,11 +99,11 @@ export const Calculator: React.FC = () => {
 
   return (
     <section id="calculator" className="py-16 sm:py-24 bg-[#0B0C0E] border-b border-[#242733]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto mobile-container-pad px-4 sm:px-6">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10 pb-8 border-b border-[#242733]">
           <div>
-            <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C29B7F] mb-2 font-mono-numbers">
+            <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-semibold uppercase tracking-wider text-[#C29B7F] mb-2 font-mono-numbers">
               <span>FREE COMPANION TOOL</span>
               <span aria-hidden="true">·</span>
               <span>ALL-IN COST AUDIT</span>
@@ -131,11 +131,11 @@ export const Calculator: React.FC = () => {
         </div>
 
         {/* 2-Column Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mobile-stack-grid">
           {/* Left Inputs Column (7 cols) */}
-          <div className="lg:col-span-7 space-y-6">
+          <div className="lg:col-span-7 min-w-0 space-y-6">
             {/* Mode Selector */}
-            <div className="flex items-center gap-2 p-1 bg-[#14161C] border border-[#242733] rounded-lg w-fit">
+            <div className="flex items-center gap-2 p-1 bg-[#14161C] border border-[#242733] rounded-lg w-full sm:w-fit">
               <button
                 type="button"
                 onClick={() => setState({ ...state, mode: 'financing' })}
@@ -162,7 +162,7 @@ export const Calculator: React.FC = () => {
 
             {/* Block 01: The offer on the table */}
             <div className="bg-[#14161C] border border-[#242733] rounded-xl p-5 sm:p-6 space-y-4">
-              <div className="border-b border-[#242733] pb-3 flex items-center justify-between">
+              <div className="border-b border-[#242733] pb-3 flex flex-wrap items-center justify-between gap-2">
                 <div>
                   <span className="font-mono-numbers text-xs font-bold text-[#C29B7F]">01</span>
                   <h3 className="text-base font-bold text-white font-heading inline-block ml-2">
@@ -251,7 +251,7 @@ export const Calculator: React.FC = () => {
 
             {/* Block 02: The bills around it */}
             <div className="bg-[#14161C] border border-[#242733] rounded-xl p-5 sm:p-6 space-y-4">
-              <div className="border-b border-[#242733] pb-3 flex items-center justify-between">
+              <div className="border-b border-[#242733] pb-3 flex flex-wrap items-center justify-between gap-2">
                 <div>
                   <span className="font-mono-numbers text-xs font-bold text-[#C29B7F]">02</span>
                   <h3 className="text-base font-bold text-white font-heading inline-block ml-2">
@@ -471,8 +471,8 @@ export const Calculator: React.FC = () => {
           </div>
 
           {/* Right Summary Column (5 cols) matching Bruno's screenshot */}
-          <div className="lg:col-span-5 sticky top-24">
-            <div className="bg-[#14161C] border border-[#242733] rounded-2xl p-6 shadow-2xl space-y-6">
+          <div className="lg:col-span-5 min-w-0 lg:sticky lg:top-24">
+            <div className="bg-[#14161C] border border-[#242733] rounded-2xl p-5 sm:p-6 shadow-2xl space-y-6">
               <div>
                 <span className="font-mono-numbers text-[11px] uppercase tracking-wider text-[#C29B7F] font-bold block mb-1">
                   YOUR CAR, BEYOND THE PAYMENT

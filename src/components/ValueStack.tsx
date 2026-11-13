@@ -5,10 +5,10 @@ import { ArrowUpRight, Shield, Check, Lock } from 'lucide-react';
 export const ValueStack: React.FC = () => {
   return (
     <section className="py-16 sm:py-24 bg-[#0B0C0E] border-b border-[#242733]">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6">
+      <div className="max-w-4xl mx-auto mobile-container-pad px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center max-w-xl mx-auto mb-12">
-          <div className="flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C29B7F] mb-2">
+          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-xs font-semibold uppercase tracking-wider text-[#C29B7F] mb-2">
             <span>Value Breakdown</span>
             <span aria-hidden="true">·</span>
             <span>Zero Subscription</span>
@@ -70,8 +70,8 @@ export const ValueStack: React.FC = () => {
               <span>Get Instant Access To The Guide — $27</span>
               <ArrowUpRight className="w-5 h-5" />
             </a>
-            <div className="flex items-center justify-center gap-2 text-xs text-[#8E909B] mt-2.5">
-              <Lock className="w-3.5 h-3.5 text-[#C29B7F]" />
+            <div className="flex flex-wrap items-center justify-center gap-2 text-xs text-[#8E909B] mt-2.5 text-center">
+              <Lock className="w-3.5 h-3.5 text-[#C29B7F] shrink-0" />
               <span>Instant digital access · 256-bit encrypted checkout via Whop · Lifetime updates</span>
             </div>
           </div>

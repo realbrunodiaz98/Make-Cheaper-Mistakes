@@ -5,10 +5,10 @@ import { HelpCircle } from 'lucide-react';
 export const ProblemSection: React.FC = () => {
   return (
     <section id="traps" className="py-16 sm:py-24 bg-[#0B0C0E] border-b border-[#242733]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto mobile-container-pad px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
-          <div className="flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C29B7F] mb-2">
+          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-xs font-semibold uppercase tracking-wider text-[#C29B7F] mb-2">
             <span>The Psychological Trap</span>
             <span aria-hidden="true">·</span>
             <span>6 Expensive Lessons</span>

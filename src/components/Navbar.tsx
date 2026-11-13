@@ -9,11 +9,11 @@ export const Navbar: React.FC = () => {
 
   return (
     <header className="sticky top-0 z-40 w-full bg-[#0B0C0E]/95 backdrop-blur-md border-b border-[#242733]">
-      <div className="max-w-6xl mx-auto flex items-center justify-between gap-8 px-4 sm:px-6 py-4">
+      <div className="max-w-6xl mx-auto mobile-container-pad flex items-center justify-between gap-2 sm:gap-4 lg:gap-8 px-4 sm:px-6 py-3.5 sm:py-4">
         {/* Zone 1: Wordmark brand, single text element */}
         <a
           href="#"
-          className="text-lg sm:text-xl font-bold tracking-tight text-white whitespace-nowrap shrink-0 font-heading hover:text-[#C29B7F] transition-colors"
+          className="text-base sm:text-xl font-bold tracking-tight text-white whitespace-nowrap min-w-0 truncate font-heading hover:text-[#C29B7F] transition-colors"
         >
           Make Cheaper Mistakes
         </a>
@@ -53,22 +53,24 @@ export const Navbar: React.FC = () => {
         </nav>
 
         {/* Zone 3: 1 primary action */}
-        <div className="flex items-center gap-3 shrink-0">
+        <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
           <a
             href={CHECKOUT_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2.5 text-xs sm:text-sm font-bold text-[#0B0C0E] bg-[#C29B7F] hover:bg-[#D4AF93] rounded-lg transition-all shadow-sm hover:shadow-[0_0_20px_rgba(194,155,127,0.3)] whitespace-nowrap shrink-0 font-heading"
+            className="inline-flex items-center justify-center gap-1 px-3 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-bold text-[#0B0C0E] bg-[#C29B7F] hover:bg-[#D4AF93] rounded-lg transition-all shadow-sm hover:shadow-[0_0_20px_rgba(194,155,127,0.3)] whitespace-nowrap shrink-0 font-heading"
           >
-            <span>Get Access — $27</span>
-            <ArrowUpRight className="w-3.5 h-3.5" />
+            <span>
+              Get Access<span className="hidden sm:inline"> — $27</span>
+            </span>
+            <ArrowUpRight className="w-3.5 h-3.5 shrink-0" />
           </a>
 
           {/* Mobile hamburger toggle */}
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-[#8E909B] hover:text-white transition-colors"
+            className="lg:hidden p-1.5 sm:p-2 text-[#8E909B] hover:text-white transition-colors shrink-0"
             aria-label="Toggle navigation menu"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
