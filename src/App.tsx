@@ -6,6 +6,7 @@
 import React, { useState } from 'react';
 import { PromoBar } from './components/PromoBar';
 import { Navbar } from './components/Navbar';
+import { ScrollProgressBar } from './components/ScrollProgressBar';
 import { Hero } from './components/Hero';
 import { CarTimeline } from './components/CarTimeline';
 import { ProblemSection } from './components/ProblemSection';
@@ -70,6 +71,9 @@ export default function App() {
 
       {/* 14. Mobile Sticky Bottom CTA Bar (< 15% viewport height) */}
       <MobileStickyCta />
+
+      {/* Subtle Top Reading Progress Bar */}
+      <ScrollProgressBar />
 
       {/* Modals & Overlays */}
       <ImageModal car={selectedCar} onClose={() => setSelectedCar(null)} />
