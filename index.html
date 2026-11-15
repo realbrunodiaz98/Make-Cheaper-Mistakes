@@ -48,6 +48,9 @@
     <!-- End Whop Pixel Code -->
   </head>
   <body class="bg-[#0B0C0E] text-[#F5F5F7] antialiased selection:bg-[#C29B7F]/30 selection:text-[#F5F5F7]">
+    <div id="scroll-progress-container" aria-hidden="true">
+      <div id="scroll-progress-bar"></div>
+    </div>
     <!-- Meta Pixel Code (noscript) -->
     <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=1695522355465713&ev=PageView&noscript=1"
@@ -55,6 +58,19 @@
     <!-- End Meta Pixel Code (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      window.onscroll = function () {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        var scrollHeight = document.documentElement.scrollHeight;
+        var clientHeight = document.documentElement.clientHeight;
+        var scrollableHeight = scrollHeight - clientHeight;
+        var scrollPercentage = scrollableHeight > 0 ? (scrollTop / scrollableHeight) * 100 : 0;
+        var progressBar = document.getElementById('scroll-progress-bar');
+        if (progressBar) {
+          progressBar.style.width = Math.min(100, Math.max(0, scrollPercentage)) + '%';
+        }
+      };
+    </script>
   </body>
 </html>
 

@@ -52,30 +52,15 @@ export const Navbar: React.FC = () => {
           </a>
         </nav>
 
-        {/* Zone 3: 1 primary action */}
-        <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
-          <a
-            href={CHECKOUT_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-1 px-3 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-bold text-[#0B0C0E] bg-[#C29B7F] hover:bg-[#D4AF93] rounded-lg transition-all shadow-sm hover:shadow-[0_0_20px_rgba(194,155,127,0.3)] whitespace-nowrap shrink-0 font-heading"
-          >
-            <span>
-              Get Access<span className="hidden sm:inline"> — $27</span>
-            </span>
-            <ArrowUpRight className="w-3.5 h-3.5 shrink-0" />
-          </a>
-
-          {/* Mobile hamburger toggle */}
-          <button
-            type="button"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-1.5 sm:p-2 text-[#8E909B] hover:text-white transition-colors shrink-0"
-            aria-label="Toggle navigation menu"
-          >
-            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
-        </div>
+        {/* Mobile hamburger toggle */}
+        <button
+          type="button"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="lg:hidden p-1.5 sm:p-2 text-[#8E909B] hover:text-white transition-colors shrink-0"
+          aria-label="Toggle navigation menu"
+        >
+          {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+        </button>
       </div>
 
       {/* Mobile menu dropdown */}

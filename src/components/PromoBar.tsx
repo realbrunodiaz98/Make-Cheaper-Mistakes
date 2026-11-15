@@ -8,31 +8,30 @@ export const PromoBar: React.FC = () => {
   if (!isVisible) return null;
 
   return (
-    <aside aria-label="Announcement" className="relative z-50 bg-[#121316] border-b border-[#242733] px-4 py-2.5 text-center text-xs sm:text-sm font-medium text-[#C29B7F]">
-      <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-2 gap-y-0.5 pr-7">
-        <span aria-hidden="true">⚡</span>
-        <span className="hidden sm:inline text-white font-semibold">DON'T SIGN ON AUTOPILOT:</span>
+    <aside aria-label="Announcement" className="relative z-50 bg-[#121316] border-b border-[#242733] pl-3 pr-9 sm:px-4 py-2 sm:py-2.5 text-center text-[11px] sm:text-sm font-medium text-[#C29B7F]">
+      <div className="max-w-7xl mx-auto flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap">
+        <span aria-hidden="true" className="shrink-0">⚡</span>
+        <span className="text-white font-semibold truncate">DON&apos;T SIGN ON AUTOPILOT:</span>
         <span className="hidden sm:inline text-[#C29B7F]">
-          Get the 20-minute guide & decision tool for just $27
+          Get the 20-minute guide &amp; decision tool for just $27
         </span>
-        <span className="sm:hidden text-white font-semibold">20-min car decision guide — $27</span>
         <a
           href={CHECKOUT_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 font-bold text-[#C29B7F] sm:text-white underline underline-offset-4 hover:text-[#D4AF93] transition-colors whitespace-nowrap"
+          className="inline-flex items-center gap-1 font-bold text-[#C29B7F] sm:text-white underline underline-offset-4 hover:text-[#D4AF93] transition-colors shrink-0"
         >
           <span>Get Access</span>
-          <ArrowRight className="w-3.5 h-3.5" />
+          <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
         </a>
       </div>
       <button
         type="button"
         onClick={() => setIsVisible(false)}
-        className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-[#8E909B] hover:text-white transition-colors"
+        className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 p-1 text-[#8E909B] hover:text-white transition-colors"
         aria-label="Dismiss banner"
       >
-        <X className="w-4 h-4" />
+        <X className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
       </button>
     </aside>
   );
